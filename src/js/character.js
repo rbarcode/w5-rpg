@@ -4,6 +4,10 @@ export class Character {
     this.health = health;
     this.inventory = inventory;
   }
+
+  hit() {
+    
+  }
 }
 
 

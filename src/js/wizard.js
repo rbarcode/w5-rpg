@@ -2,11 +2,12 @@ import { Character } from './character';
 
 export class Wizard extends Character {
 
-  constructor(strength, health, inventory) {
-    super(strength, health, inventory)
-    this.strength = strength;
-    this.health = health;
-    this.inventory = inventory;
+  constructor() {
+    super()
+    this.strength = 1;
+    this.health = 100;
+    this.wand = 5;
+    this.inventory = this.wand;
   }
 
 }

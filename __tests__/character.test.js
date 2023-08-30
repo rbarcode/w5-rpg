@@ -9,12 +9,17 @@ describe('Character', () => {
 
   test('should create an character object', () => {
     let character = new Character();
-    expect(character).toEqual({strength: undefined, health: undefined, inventory: undefined})
+    expect(character).toEqual({strength: undefined, health: undefined, inventory: undefined});
   });
 
   test('should compute damage caused', () => {
-    let damage = character.hit();
+    let damage = character.dealDamage();
     expect(damage).toEqual(30);
+  });
+
+  test('should compute damage taken', () => {
+    let health = character.takeDamage();
+    expect(health).toEqual(70);
   });
 
 });

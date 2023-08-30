@@ -5,12 +5,18 @@ export class Character {
     this.inventory = inventory;
   }
 
-  hit() {
+  dealDamage() {
     let damage; 
     damage = this.strength * this.inventory;
     return damage;
 
   }
+
+  takeDamage() {
+    // we want that good fail!!
+  }
 }
+
+
 
 

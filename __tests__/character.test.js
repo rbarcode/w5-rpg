@@ -18,8 +18,8 @@ describe('Character', () => {
   });
 
   test('should compute damage taken', () => {
-    let health = character.takeDamage();
-    expect(health).toEqual(70);
+    character.takeDamage(30);
+    expect(character.health).toEqual(70);
   });
 
 });

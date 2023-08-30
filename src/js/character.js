@@ -12,11 +12,15 @@ export class Character {
 
   }
 
-  takeDamage() {
-    // we want that good fail!!
+  takeDamage(damage) {
+    this.health = this.health - damage;
   }
 }
 
 
 
 
+
+
+// if (has armor) 
+//   damage - armor; // reduce damage

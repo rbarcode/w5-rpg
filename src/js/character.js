@@ -6,7 +6,10 @@ export class Character {
   }
 
   hit() {
-    
+    let damage; 
+    damage = this.strength * this.inventory;
+    return damage;
+
   }
 }
 

@@ -1,8 +1,8 @@
 export class Character {
-  constructor(strength, health, inventory) {
-    this.strength = strength;
-    this.health = health;
-    this.inventory = inventory;
+  constructor() {
+    this.strength = 0; 
+    this.health = 0; 
+    this.inventory = 0;
   }
 
   dealDamage() {

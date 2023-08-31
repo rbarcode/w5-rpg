@@ -25,7 +25,7 @@
 2. Click on the green “<> Code” on the far right-hand side of the page's main column.
 3. On the “Local” tab of the mini-window that opens underneath the “<>Code” button, copy the HTTPS link in the gray bar to your clipboard.
 4. In GitBash (or a terminal shell of your choice), navigate to the directory where you wish to download the project and enter the following prompt (replacing the italicized word with the appropriate link): git clone *url-of-the-repository-copied-in-the-previous-step*
-5. Your chosen directory will now contain a folder titled //ADD NAME OF REPO//.
+5. Your chosen directory will now contain a folder titled "w5-rpg".
 6. Navigate into the folder. This is the project's root directory.  
 7. After ensuring you have the JavaScript runtime environment Node.js installed on your computer, run the following command from your terminal in the project's root directory: npm install  
 8. Node.js' (16.13.1) packet manager, (8.1.2) npm, will fetch the packages listed in the project's package.json file and any dependencies (including webpack, ESLint and Jest) and install all of the source code in a "node_modules" directory which it creates in the project's root directory. The "scripts" key in the package.json file contains the various actions you can perform with the project's files.
@@ -42,7 +42,7 @@ No known bugs.
 
 MIT License
 
-Copyright (c) 2023 Richard Barbour II
+Copyright (c) 2023 Richard Barbour II, Jake Elsberry, Onur Kaymak, Similoluwa Oyinkoalde, Joey Palchak
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

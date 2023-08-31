@@ -1,6 +1,6 @@
-# //Project Name//
+# RPG using JavaScript Classes
 
-#### By Richard Barbour II
+#### By Richard Barbour II, Jake Elsberry, Onur Kaymak, Similoluwa Oyinkoalde, Joey Palchak
 
 #### //Summary of project in one or two sentences.// 
 
@@ -21,7 +21,7 @@
 
 ## Setup/Installation Requirements
 
-1. Navigate to //ADD URL OF REPO// in an internet browser.
+1. Navigate to https://github.com/rbarcode/w5-rpg in an internet browser.
 2. Click on the green “<> Code” on the far right-hand side of the page's main column.
 3. On the “Local” tab of the mini-window that opens underneath the “<>Code” button, copy the HTTPS link in the gray bar to your clipboard.
 4. In GitBash (or a terminal shell of your choice), navigate to the directory where you wish to download the project and enter the following prompt (replacing the italicized word with the appropriate link): git clone *url-of-the-repository-copied-in-the-previous-step*
@@ -44,87 +44,8 @@ MIT License
 
 Copyright (c) 2023 Richard Barbour II
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-
-Class/Game Structure
-
-- Different classes for each character type, an overall gamestate class.
-    - Character Types
-        - Warrior Class
-            - “Strength” = 3
-            - “Intelligence”
-            - “Health” = 100
-            - “Level”
-            - “Inventory” access somehow the Item class
-                - addItem()
-                - removeItem()
-                - Note to selves for now: each character can only hold one item for now
-            - “Actions”
-                - Hit (i.e. cause damage)
-                    - a method that combines strength and inventory to produce amount of damage: strength * item = amount of damage caused
-                - Be Hit (i.e. take damage)
-                    - a method that decreases the character health: warrior.health = warrior.health - (amount of damage caused - armor)
-        - Wizard Class
-            - “Strength” = multiplier of 3
-            - “Intelligence”
-            - “Health” = 100
-                - 
-            - “Level”
-            - “Inventory” access somehow the Item class
-    - Item Class
-        - Weapon Object
-            - Sword = deals 10 damage
-            - Wand = deals 10 damage
-        - Amor Object
-            - Shield = decrease damage by 10
-    - Battle Class
-        - Takes two characters (warrior, wizard)
-            - call on the warrior.hit — this results in the amount of damage.
-            - call on wizard.beHit and pass in the amount of damage.
-
-
-
-
-class Character() {
-  constructor() {
-    this.strength = 3;
-    this.weapon = "Sword";
-  }
-
-  hit() {
-    return this.strength * this.weapon;
-  }
-}
-
-let warrior = new Character()
-let damage = warrior.hit();
-
-let wizard = new Character();
-let damage = wizard.hit();
-
-class Character {
-  ...
-}
-
-class Warrior extends Character {
-  ....
-}
-
-let Onur = new Warrior();
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

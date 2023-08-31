@@ -5,7 +5,7 @@ export class Battle {
     }
 
     attack() {
-        
+        this.players[1].takeDamage(this.players[0].dealDamage());
     }
 
   }

@@ -2,7 +2,7 @@
 
 #### By Richard Barbour II, Jake Elsberry, Onur Kaymak, Similoluwa Oyinkoalde, Joey Palchak
 
-#### //Summary of project in one or two sentences.// 
+#### Group project to create the business logic (no UI) of an RPG game using classes in JavaScript. 
 
 
 ## Technologies Used
@@ -17,7 +17,11 @@
 
 ## Description
 
-//Short description paragraph//
+This code uses classes in JavaScript to create the business logic of an RPG game. There is no user interface logic. The RPG code consists of four classes: Character, Warrior, Wizard and Battle.  
+
+The Character class is a template with attributes that all RPG characters will "inherit", including methods for causing damage and taking damage. The Warrior and Wizard are extensions of the Character class, and hard code specific values to the attributes "inherited" from the Character class.  
+
+The Battle class handles the battle system and consists of one attack method, which calls on the deal damage and take damage methods that the Warrior/Wizard inherits from the Character class.
 
 ## Setup/Installation Requirements
 

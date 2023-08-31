@@ -1,12 +1,12 @@
 export class Character {
   constructor() {
-    this.strength = 0; 
-    this.health = 0; 
+    this.strength = 0;
+    this.health = 0;
     this.inventory = 0;
   }
 
   dealDamage() {
-    let damage; 
+    let damage;
     damage = this.strength * this.inventory;
     return damage;
 
@@ -16,11 +16,3 @@ export class Character {
     this.health = this.health - damage;
   }
 }
-
-
-
-
-
-
-// if (has armor) 
-//   damage - armor; // reduce damage
